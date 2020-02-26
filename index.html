@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5.km</title>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="shortcut icon" href="intro/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="intro/images/favicon.ico" type="image/x-icon">
+    <!--fonts-->
+    
+    <!--css-->
+    <link rel="stylesheet" href="intro/css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="intro/css/min_746.css" type="text/css">
+    <link rel="stylesheet" href="intro/css/min_1024.css" type="text/css">
+    <!--css-->
+    
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+    <script src="intro/js/intro.js"></script>
+    
+    <script src="intro/js/stars.js"></script>
+    <script src="intro/js/script.js"></script>
+    <!--js-->
+    
+    <!--scroll action-->
+    <script>
+    function move(num){
+    var offset = $(".move"+num).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+        return false
+    }
+    
+        
+        
+    </script>
+    <!--scroll action-->
+    
+</head>
+<body class="ovh100">
+<!--zen cording-->
+<!--    header((>h1>a[href=index.html]>img[alt=logo])+nav>ul>li*4>a[href=#])+main(>section#sec_$.sec*4>h2+#section_$_Wrap.sec_Wrap)+footer>h3+#footer_Nav(>ul>li*4>a[href=#none])+#copy>p-->
+<!--zen cording-->
+    <audio id="bgm" autoplay loop>
+          <source src="intro/audio/Believer.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id="stars"></canvas>
+     
+    <div id="intro_Wrap" class="ovh">
+    <div id="door">
+        <canvas id="door_T"></canvas>
+        <canvas id="door_B"></canvas>
+        
+        <div id="door_Wrap">
+            <h1>Are you ready?</h1>
+            <div id="btn">
+                <button type="button">YES</button>
+                <button type="button">NO</button>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="bg"></canvas>
+    <div id="line">
+        <div id="word_Wrap">
+           
+            <div id="word_1" class="word">
+             <span>소개합니다 </span>
+            </div>
+            <div id="word_2" class="word">
+                <div id="word_2_L" class="word_L">
+                    <span>항상 </span>
+                </div>
+                <div id="word_2_R" class="word_R">
+                    <span>꿈꾸고 </span>
+                </div>            
+            </div>
+            <div id="word_3" class="word">
+                <div id="word_3_L" class="word_L">
+                    <span>도전 </span>
+                </div>
+                <div id="word_3_R" class="word_R">
+                    <span>하는 </span>
+                </div>               
+                
+            </div>
+
+            <div id="word_4" class="word">
+                <div id="word_4_L" class="word_L">
+                    <span>열정 </span>
+                </div>
+                <div id="word_4_R" class="word_R">
+                    <span>적인 </span>
+                </div>               
+
+            </div>
+            <div id="img_4">
+                <span class="word">남자</span>
+            </div>
+            
+            <div id="word_5" class="word">
+                    <span>오경민 입니다. </span>
+
+            </div>            
+           
+        </div>
+    </div>
+    </div>
+    <div id="main_Wrap">
+    <header class="dn">
+        
+        <h1>
+            <a href="index.html">
+                <img src="intro/images/logo.png" alt="logo">
+            </a>
+        </h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#" onclick="move('0')" class="green">HOME</a></li>
+                <li><a href="#" onclick="move('1')" class="yellow">PORTFOLIO</a></li>
+                <li><a href="#" onclick="move('2')" class="red">PROFILE</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!--header end-->
+    
+    <main>
+       
+        <h2>Content</h2>
+        
+        <section id="sec_1" class="sec move0">
+
+            <h3 class="green">HOME</h3>
+            
+            <div id="sec_1_Wrap" class="sec_Wrap">
+                <div id="text_Wrap">
+                    <h4>OH KYUNG MIN </h4>
+                    <p>
+                        <span>
+                            <mark class="green">Dream </mark>
+                            Always
+                        </span>
+                        <span>
+                            <mark class="yellow">Try </mark>
+                            what you want     
+                        </span>                         
+                        <span>
+                            <mark class="red">Make </mark>
+                            it     
+                        </span>
+                        <span class="mt20 small">zzagg777@gmail.com</span>
+                        <span class="mt10 small">(+82) 10 5228 4507</span>
+                    </p>      
+
+                    <div class="links">
+
+                        <a class="link yellow" href="intro/bucket.html" title="View my bucket list" target="_blank">
+                            View my bucket list
+                        </a>
+                        <a class="link green" href="intro/secret.html" title="Tell me a secret" target="_blank">
+                            Tell me a secret
+                        </a>
+                        <a class="link red" href="intro/resume/ohkyungmin_resume.hwp" title="Download my résumé" download="Ohkyungmin_resume">
+                            Download my résumé
+                        </a>
+
+                    </div>
+                </div>
+                <div id="img_Wrap">
+                    <img src="intro/images/min.jpg" alt="main">
+                </div>              
+            </div>
+        </section>
+        
+
+        <section id="sec_2" class="sec move1">
+            <h3 class="yellow">PORTFOLIO</h3>
+            <div id="sec_2_Wrap" class="sec_Wrap">
+                
+                <div class="portfolio">
+                <figure>
+                    <a href="http://minstour.com/bold" target="_blank">
+                    <img src="intro/images/bold.png" alt="port_1">
+                    </a>    
+                    <figcaption>
+                       
+                        <span class="title">Regular bold</span>
+                        <span>반응형 웹 - CSS Studio effect</span>
+                        <span>HTML/CSS3/JQUERY</span>
+                        <span class="view"><a href="http://minstour.com/bold" target="_blank">VIEW</a></span>                        
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="http://minstour.com/apple" target="_blank">
+                    <img src="intro/images/apple.png" alt="port_2">
+                    </a>
+                    <figcaption>
+                       
+                        <span class="title">Apple</span>
+                        <span>반응형 웹</span>
+                        <span>HTML/CSS3/JQUERY</span>
+                        <span class="view"><a href="http://minstour.com/apple" target="_blank">VIEW</a></span>                        
+                    </figcaption>
+                </figure>
+                        
+                </div>
+                
+            </div>
+        </section>
+        <section id="sec_3" class="sec">
+            <h3 class="yellow">PORTFOLIO</h3>
+            <div id="sec_3_Wrap" class="sec_Wrap">
+                <div class="portfolio">
+                <figure>
+                    <a href="http://minstour.com/surfer" target="_blank">
+                    <img src="intro/images/surfer.png" alt="port_3">
+                    </a>
+                    <figcaption>
+                       
+                        <span class="title">Surfers Paradise</span>
+                        <span>반응형 웹 - Bootstrap</span>
+                        <span>HTML/CSS3/JQUERY</span>
+                        <span class="view"><a href="http://minstour.com/surfer" target="_blank">VIEW</a></span>                        
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="http://minstour.com/bohemian" target="_blank">
+                    <img src="intro/images/bohemian.png" alt="port_4">
+                    </a>
+                    <figcaption>
+                       
+                        <span class="title">Bohemian Rhapsody </span>
+                        <span>반응형 웹 - Bootstrap template</span>
+                        <span>HTML/CSS3/JQUERY</span>
+                        <span class="view"><a href="http://minstour.com/bohemian" target="_blank">VIEW</a></span>
+                        
+                    </figcaption>
+                </figure>
+                        
+                </div>
+                
+                
+            </div>
+
+            <div id="sec_4_Wrap" class="sec_Wrap">
+                <div id="design">
+                    <figure class="uiux">
+                        <a href="intro/images/wetogether.pdf" target="_blank"><img src="intro/images/uiux_1.png" alt="uiux_1"></a>
+                        <figcaption>
+
+                            <span class="title">We Together </span>
+                            <span>모바일 UI/UX</span>
+                            <span>PhotoShop/Illustrator</span>
+                            <span class="view"><a href="intro/images/wetogether.pdf" target="_blank">VIEW</a></span>                    
+                        </figcaption>
+                    </figure>
+                    <figure class="uiux">
+                        <a href="intro/images/wetogether.pdf" target="_blank"><img src="intro/images/uiux_2.png" alt="uiux_2"></a>
+                        <figcaption>
+                            <span class="title">We Together </span>
+                            <span>모바일 UI/UX</span>
+                            <span>PhotoShop/Illustrator</span>
+                            <span class="view"><a href="intro/images/wetogether.pdf" target="_blank">VIEW</a></span>                    
+                        </figcaption>
+                    </figure>
+                    <figure class="uiux">
+                        <a href="intro/images/wetogether.pdf" target="_blank"><img src="intro/images/uiux_3.png" alt="uiux_3"></a>
+                        <figcaption>
+                            <span class="title">We Together </span>
+                            <span>모바일 UI/UX</span>
+                            <span>PhotoShop/Illustrator</span>
+                            <span class="view"><a href="intro/images/wetogether.pdf" target="_blank">VIEW</a></span>                    
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            <button id="left">&lt;</button>
+            <button id="right">&gt;</button>
+            
+            </div>            
+            
+            
+            
+        </section>
+        
+        <section id="sec_5" class="sec move2">
+            <h3 class="red">PROFILE</h3>
+            
+            <div id="sec_5_Wrap" class="sec_Wrap">
+             
+               
+               
+                <div id="profile">
+                    <table>
+                    <tr>
+                        <th>
+                            <span class="mt10">Name</span>
+                        </th>    
+                        <td>
+                            <span class="mt10">오경민</span>
+                            <span class="small">Oh KYUNG MIN</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="mt10">Birth</span>
+                        </th>    
+                        <td>
+                            <span class="mt10">1990. 09. 26</span>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="mt10">Email</span>
+                        </th>    
+                        <td>
+                            <span class="mt10">zzagg777@gmail.com</span>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="mt10">Mobile</span>
+                        </th>    
+                        <td>
+                            <span class="mt10">(+82) 10 5228 4507</span>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="mt10">Certificate</span>
+                        </th>    
+                        <td>
+                            <span class="mt10">2018 웹디자인 기능사</span>
+                            <span>2018 컴퓨터그래픽스 운용기능사</span>
+                            <span>2018 GTQ PHOTOSHOP 1급</span>
+                        </td>    
+                    </tr>                                                                     
+                    <tr>
+                        <th>
+                            <span class="mt10">Skill</span>
+                        </th>
+                        <td>
+                            <span class="mt10">HTML / CSS3</span>
+                            <span>JAVASCRIPT / jQuery </span>
+                            <span>Photoshop / Illustrator / Indesign</span>
+                        </td>
+                    </tr>    
+
+                    </table>
+                <div class="links">
+                    <a class="small" href="https://www.facebook.com/OhKaeng" title="Facebook (@OhKaeng)" target="_blank">Facebook</a>
+                    <a class="small" href="https://www.instagram.com/ohkaeng90" title="Instagram (@ohkaeng90)" target="_blank">Instagram</a>
+                </div>                     
+                </div>
+
+                
+                <div id="info">
+                    <figure>
+                        <img src="intro/images/info.png" alt="info">
+                        <figcaption>
+                            <span class="title">Infographic </span>
+                            <span>Infographic</span>
+                            <span>PhotoShop/Illustrator</span>
+                            <span class="view"><a href="intro/images/infographic.pdf" target="_blank">VIEW</a></span>                    
+                        </figcaption>
+                    </figure>
+                </div>                                                 
+                                                                                                             
+            </div>
+        </section>
+    </main>
+    <!--main end-->
+    
+    <footer>
+        <h2>Copyright</h2>
+        <div id="footer_Nav">
+            
+            <ul>
+                <li><a href="#" onclick="move('0')" class="green">HOME</a></li>
+                <li><a href="#" onclick="move('1')" class="yellow">PORTFOLIO</a></li>
+                <li><a href="#" onclick="move('2')" class="red">PROFILE</a></li>
+<!--                <li><a href="#" onclick="move('3')" class="blue">résumé</a></li>-->
+            </ul>
+        </div>
+        <div id="copy">
+            <p>Copyright © 2018 O.kyngmin.</p>
+        </div>
+    </footer>
+    </div>
+    <!--footer end-->
+</body>
+</html>
