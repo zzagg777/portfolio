@@ -1,0 +1,120 @@
+@media only screen and (min-width:736px){
+    
+html,body{font-size: 20px;}    
+    
+header{}
+
+header h1{}
+header h1 a{}
+header h1 a img{}
+
+header nav{}
+header nav ul{
+    float: right;
+    margin-right: 1rem;
+    }
+header nav ul li{}
+header nav ul li a{}
+
+/*header end*/
+
+main{}
+main h2{}
+
+section.sec{}
+section.sec .sec_Wrap{}
+
+section#sec_1{
+    padding-bottom: 100px;
+    }
+section#sec_1 h3{}
+section#sec_1 #sec_1_Wrap{}
+
+section#sec_1 #sec_1_Wrap #text_Wrap{
+    text-align: left;
+    float: left;
+    width: 50%;
+    }
+    section#sec_1 #sec_1_Wrap .links{
+        left: 0;
+    }
+section#sec_1 #sec_1_Wrap #img_Wrap{
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+section#sec_1 #sec_1_Wrap #img_Wrap img{
+    filter: grayscale(100);
+}
+section#sec_1 #sec_1_Wrap #img_Wrap img:hover{
+    filter: none;        
+}    
+    
+    
+section#sec_5{}
+section#sec_5 h3{}
+section#sec_5 #sec_5_Wrap{}
+    section#sec_5 #sec_5_Wrap #profile{
+        width: calc(50% - 2rem);
+    }
+section#sec_5 #sec_5_Wrap #profile table{
+}    
+    
+    
+section#sec_2{}
+section#sec_2 h3{}
+section#sec_2 #sec_2_Wrap{}
+.portfolio figure{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: left;
+    }
+.portfolio figure:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+    }
+.portfolio figure>a{
+    display: block;
+    width: 60%;
+    }    
+.portfolio figure figcaption{
+    width: 40%;
+    }    
+.portfolio figure figcaption span:nth-child(1){
+    margin-top: 60px;
+    }
+    figure figcaption span.view{
+    }
+section#sec_3{}
+section#sec_3 h3{}
+section#sec_3 #sec_3_Wrap{}
+
+/*main end*/
+
+footer{}
+footer h2{}
+
+footer #footer_Nav{}
+footer #footer_Nav ul{}
+footer #footer_Nav ul li{}
+footer #footer_Nav ul li a{}
+
+footer #copy{}
+footer #copy p{}
+
+/*footer end*/
+
+
+ 
+#info{
+    width: 50%;
+    float: right;
+    margin:2.5rem 0 !important;
+}
+    
+}/*media end*/
+

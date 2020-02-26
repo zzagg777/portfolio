@@ -1,0 +1,353 @@
+@import url("reset.css");
+@import url("common.css");
+@import url("intro.css");
+/*
+::-webkit-scrollbar{
+    display: none;
+}
+*/
+html{
+/*    font-family: 'Roboto Slab', serif;*/
+}
+
+body{
+    background-color:#171a19;
+    color:#fff;
+/*    transform: translateY(-100vh);*/
+}
+
+#stars{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color:#171a19;
+    overflow: hidden;
+    text-align: center;
+}
+header h1{
+    float: left;
+    width: 10%;
+    font-size: 0;
+}
+header h1 a{}
+header h1 a img{
+    width: 40%;
+    margin: 0.5rem;
+}
+
+header nav{
+    float: left;
+    width: 90%;
+}
+header nav ul{}
+header nav ul li{
+    display: inline-block;
+    margin: 0.5rem;    
+    text-transform: uppercase;
+    
+}
+header nav ul li a{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/*header end*/
+
+main{
+    position: relative;
+}
+main h2{
+    display: none;
+}
+
+section.sec{
+    position: relative;
+/*    height: 43.5vh;*/
+/*    min-height: 380px;*/
+/*    max-height: 950px;*/
+    padding: 1.2rem;
+    text-align: center;
+}
+
+section.sec h3{
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+section.sec .sec_Wrap{}
+
+
+
+section#sec_1{
+    position: relative;
+    min-height: 380px;
+}
+section#sec_1 h3{}
+section#sec_1 #sec_1_Wrap{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    
+}
+
+section#sec_1 #sec_1_Wrap h4{
+    font-size: 1.8rem;
+}
+
+section#sec_1 #sec_1_Wrap p{
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+section#sec_1 #sec_1_Wrap p span{
+    display: block;
+    margin: 0.5rem 0;
+}
+section#sec_1 #sec_1_Wrap p span:nth-child(1){}
+section#sec_1 #sec_1_Wrap p span:nth-child(2){}
+section#sec_1 #sec_1_Wrap p span mark{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+section#sec_1 #sec_1_Wrap p span mark:before{
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+}
+section#sec_1 #sec_1_Wrap p span mark.green:before{
+    background-color: rgba(65,157,120,0.14);
+}
+section#sec_1 #sec_1_Wrap p span mark.yellow:before{
+    background-color: rgba(224,164,88,0.14);    
+}
+section#sec_1 #sec_1_Wrap p span mark.red:before{
+    background-color: rgba(217,89,76,0.14);    
+}
+section#sec_1 #sec_1_Wrap .links{
+    text-align: left;
+    position: absolute;
+    left: 30%;
+    z-index: 10;
+/*    bottom: 5%;*/
+/*    left: 0;
+    right: 0;
+    width: 135px;
+    height: 115px;
+    margin: auto;*/
+    
+}
+section#sec_1 #sec_1_Wrap .links a{
+    display: block;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
+section#sec_1 #sec_1_Wrap #text_Wrap{
+    text-align: center;
+    position: relative;
+}
+section#sec_1 #sec_1_Wrap #img_Wrap{
+    display: none;
+}
+section#sec_1 #sec_1_Wrap #img_Wrap img{
+    width: 100%;
+}
+
+/*sec_1 end*/
+
+section#sec_2{
+}
+section#sec_2 h3{
+    margin-bottom: 0.5rem;
+}
+section#sec_2 #sec_2_Wrap{}
+section#sec_2 #sec_2_Wrap .portfolio{}
+section#sec_2 #sec_2_Wrap .portfolio figure{}
+
+section#sec_2 #sec_2_Wrap .portfolio figure:nth-child(1){
+    background-image: url(../images/bold.png);
+}
+section#sec_2 #sec_2_Wrap .portfolio figure:nth-child(2){
+    background-image: url(../images/apple.png);    
+}
+
+section#sec_2 #sec_2_Wrap .portfolio figure a{}
+section#sec_2 #sec_2_Wrap .portfolio figure a img{}
+section#sec_2 #sec_2_Wrap .portfolio figure figcaption{}
+
+/*sec_2 end*/
+
+section#sec_3{
+}
+section#sec_3 h3{
+    display: none;
+}
+section#sec_3 #sec_3_Wrap{}
+section#sec_3 #sec_3_Wrap .portfolio{}
+section#sec_3 #sec_3_Wrap .portfolio figure{}
+
+section#sec_3 #sec_3_Wrap .portfolio figure:nth-child(1){
+    background-image: url(../images/surfer.png);
+}
+section#sec_3 #sec_3_Wrap .portfolio figure:nth-child(2){
+    background-image: url(../images/bohemian.png);    
+}
+section#sec_3 #sec_3_Wrap .portfolio figure a{}
+section#sec_3 #sec_3_Wrap .portfolio figure a img{
+}
+section#sec_3 #sec_3_Wrap .portfolio figure figcaption{}
+section#sec_3 #sec_3_Wrap .portfolio figure figcaption span{}
+section#sec_3 #sec_3_Wrap .portfolio figure figcaption span a{}
+
+
+#sec_4_Wrap{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+#sec_4_Wrap #design{
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+#sec_4_Wrap #design figure{
+    float: left;
+}
+#sec_4_Wrap #design figure a{}
+#sec_4_Wrap #design figure a img{
+    width: 100%;
+}
+#sec_4_Wrap #design figure figcaption{}
+#sec_4_Wrap #design figure figcaption span{}
+#sec_4_Wrap #design figure figcaption span a{}
+
+#sec_4_Wrap button{
+    display: inline-block;
+    background-color: transparent;
+    color:#fff;
+    border: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 30px;
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    
+}
+
+/*sec_3 end*/
+
+section#sec_5{
+    margin-bottom: 12vw;
+}
+section#sec_5 h3{}
+
+section#sec_5 #sec_5_Wrap{
+    text-align: center;
+    margin-top: 15vw;
+}
+
+section#sec_5 #sec_5_Wrap #profile{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    
+}
+section#sec_5 #sec_5_Wrap #profile table{
+    line-height: 1.5;
+    
+}
+section#sec_5 #sec_5_Wrap #profile table tr{
+}
+section#sec_5 #sec_5_Wrap #profile table tr:nth-child(1) td span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+section#sec_5 #sec_5_Wrap #profile table tr th{
+    font-size: 0.9rem;
+    vertical-align: top;
+}
+section#sec_5 #sec_5_Wrap #profile table tr td{
+    color: #aaa;
+    font-size: 0.8rem;
+}
+section#sec_5 #sec_5_Wrap #profile table tr span{
+    display: block;
+}
+section#sec_5 #sec_5_Wrap #profile table tr th span{
+    margin-right: 0.5rem;
+}
+section#sec_5 #sec_5_Wrap #profile .links{
+    margin-top: 1rem;
+    text-align: center;
+}
+section#sec_5 #sec_5_Wrap #profile .links a{
+}
+
+section#sec_5 #info{
+    position: relative;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+section#sec_5 #info figure{}
+section#sec_5 #info figure img{
+    width: 50%;
+}
+section#sec_5 #info figure figcaption{}
+section#sec_5 #info figure figcaption span{}
+section#sec_5 #info figure figcaption span a{}
+/*sec_5 end*/
+
+/*main end*/
+
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+footer h2{
+    display: none;}
+
+footer #footer_Nav{
+}
+footer #footer_Nav ul{}
+footer #footer_Nav ul li{
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0.5rem;
+}
+footer #footer_Nav ul li a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+footer #copy{}
+footer #copy p{
+    font-size: 0.7rem;
+}
+.dn{display: none !important;}
+.on{background-size: 80%!important;}
+/*.uiux figure{position: relative;}*/
+
+/*footer end*/
+#main_Wrap{
+    opacity: 0;
+    transition: all 5s;
+    transform: translateY(300vh);
+}

@@ -1,0 +1,181 @@
+@media only screen and (min-width:1024px){
+    
+html,body{font-size: 25px;}     
+    
+header{}
+
+header h1{}
+header h1 a{}
+header h1 a img{}
+
+header nav{}
+header nav ul{}
+header nav ul li{}
+header nav ul li a{}
+
+/*header end*/
+
+main{}
+main h2{}
+
+section.sec{
+}
+section.sec .sec_Wrap{}
+
+section#sec_1{
+    height: 83vh;
+    max-height: 940px;
+    }
+section#sec_1 h3{}
+section#sec_1 #sec_1_Wrap{}
+    section#sec_1 #sec_1_Wrap .links a{
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+    section#sec_1 #sec_1_Wrap .links{
+/*        bottom: -100%;*/
+        min-width: 500px;
+    }    
+    
+    
+section#sec_5{
+    height: 90vh;
+    max-height: 940px;
+    }
+section#sec_5 h3{}
+section#sec_5 #sec_5_Wrap{}
+
+    
+section#sec_5 #sec_5_Wrap #profile table{
+    width: 50%;
+}
+    section#sec_5 #sec_5_Wrap #profile table tr:last-child td span{
+    }
+    .portfolio{
+    }
+    .portfolio figure,#info  figure{
+        transition: all 1s;
+    }
+    
+    .portfolio figure figcaption,#info figcaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        transition: all 1s;
+        opacity: 0;
+        transform: translateY(-50px)
+        
+    }
+    .portfolio figure figcaption span,#info span{
+        margin: 0 1rem;
+        display: inline-block;
+    }
+    span.view{
+    }
+    .portfolio figure:hover{
+        transform: scale(1.1)
+    }
+    #info figure:hover{
+        transform: scale(1.1)
+    }
+    .portfolio figure:hover figcaption{
+        opacity: 1;
+        transform: translateY(-10px)
+    }
+    #info figure:hover figcaption{
+        opacity: 1;
+        transform: translateY(-10px)
+    }
+section#sec_2{}
+section#sec_2 h3{}
+section#sec_2 #sec_2_Wrap{}
+
+section#sec_3{}
+section#sec_3 h3{}
+section#sec_3 #sec_3_Wrap{}
+
+#sec_4_Wrap{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    }
+#sec_4_Wrap figure{
+    position: relative;
+
+    }
+#sec_4_Wrap figure img{
+    width: 80% !important;
+    }
+#sec_4_Wrap figure figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+#sec_4_Wrap figure figcaption span{
+    display: inline-block;
+    margin: 0 1rem;
+    }
+#sec_4_Wrap button{position: absolute;
+    z-index: 1000;}
+#sec_4_Wrap button#left{
+        top: 50%;
+        left: 0;
+}
+#sec_4_Wrap button#right{
+        top: 50%;
+        right: 0;
+        
+}
+    
+section#sec_5 #sec_5_Wrap{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+}
+    
+section#sec_5 #sec_5_Wrap #profile{
+        float: left;
+        width: calc(40% - 2rem)!important;
+}
+section#sec_5 #sec_5_Wra #info{
+        width: 60%;
+}
+    
+/*main end*/
+
+footer{}
+footer h2{}
+
+footer #footer_Nav{}
+footer #footer_Nav ul{}
+footer #footer_Nav ul li{}
+footer #footer_Nav ul li a{}
+
+footer #copy{}
+footer #copy p{}
+
+/*footer end*/
+
+   
+.portfolio figure{
+    margin-bottom: 15vh;
+    height: 83vh;
+    max-height: 940px;
+    }    
+/*    #design figure figcaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    } */   
+
+}
+
+
