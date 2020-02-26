@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>SufersParadise</title>
+    
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="favicon/apple-icon-120x120.png">
+    <!--favicon-->
+    
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+    <!--font-->
+    
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/min_546.css" type="text/css">
+    <link rel="stylesheet" href="css/min_1024.css" type="text/css">
+    <!--css-->
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--bootstrap css-->
+    
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="js/gnb_text.js"></script>
+    <script src="js/banner_rolling.js"></script>
+    <script src="js/shop_slide.js"></script>
+    <script src="js/audio_click.js"></script>
+    <script src="js/map_modal.js"></script>
+    <script src="js/fade_scroll.js"></script>
+    <!--Jquery-->
+    
+    <!--bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--bootstrap js-->
+    
+    <!--googlemap js-->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!--googlemap js-->
+    
+    <!--nav slide js-->
+    <script>
+    function move(num){
+    var offset = $(".move"+num).offset();
+        $('html, body').animate({scrollTop : offset.top - 130}, 400);
+        return false
+    }
+    </script>
+    <!--nav slide js-->
+    
+    <!--googlemap js-->
+    <script>
+      function initialize() {
+        var mapLocation = new google.maps.LatLng('-27.514457', '153.033070'); // 지도에서 가운데로 위치할 위도와 경도
+        var markLocation = new google.maps.LatLng('-27.514457', '153.033070'); // 마커가 위치할 위도와 경도
+         
+        var mapOptions = {
+          center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
+          zoom: 18, // 지도 zoom단계
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), // id: map-canvas, body에 있는 div태그의 id와 같아야 함
+            mapOptions);
+         
+        var size_x = 60; // 마커로 사용할 이미지의 가로 크기
+        var size_y = 60; // 마커로 사용할 이미지의 세로 크기
+         
+        // 마커로 사용할 이미지 주소
+        var image = new google.maps.MarkerImage( 'http://www.larva.re.kr/home/img/boximage3.png',
+                            new google.maps.Size(size_x, size_y),
+                            '',
+                            '',
+                            new google.maps.Size(size_x, size_y));
+         
+        var marker;
+        marker = new google.maps.Marker({
+               position: markLocation, // 마커가 위치할 위도와 경도(변수)
+               map: map,
+               icon: image, // 마커로 사용할 이미지(변수)
+//             info: '말풍선 안에 들어갈 내용',
+               title: 'SurfersParadise' // 마커에 마우스 포인트를 갖다댔을 때 뜨는 타이틀
+        });
+        var content = "Join us"; // 말풍선 안에 들어갈 내용
+         
+        // 마커를 클릭했을 때의 이벤트. 말풍선 뿅~
+        var infowindow = new google.maps.InfoWindow({ content: content});
+ 
+        google.maps.event.addListener(marker, "click", function() {
+            infowindow.open(map,marker);
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+      <!--googlemap js--> 
+    
+</head>
+<body>
+<!--zen cording-->
+    
+<!--    #wrapper>header(>h1(>a[href=index.html]>img[src=images/logo.png alt=logo])+nav(>ul>li*4>a[href#none])+#gnb(>a[href=#none]*2))+section#bannerWrap(>#banner_L(>span.blue+h2+h2+p+span)+#banner_R>img[src=images/main1.jpg alt=main])+article(>p+span+span.line_2)+#video(>#video_L(>#viedo_Img(>img[src=images/section1.jpg alt=videoImage])+p>span+span.line_1)+#video_R(>video))+#shop(>#shop_T(>span.blue+h3)+#shop_B>p(>span*2)+figure*3(>img[src=images/shop$.png alt=shop$]+figcaption)+span+span.line2)+section#learnWrap(>#learn1(>#learn1_L(>img[src=images/train1.jpg alt=train1])+#learn1_R>img[src=images/01.png]+h4+span.line3+p+span+span.line2)+#learn2(>#learn2_L(>img[src=images/train2.jpg])+#learn2_R>img[src=images/02.png]+h4+span.line3+p+span+span.line2))+#club(>span.line1+h3+p+form(>input[type=text placeholder=E-mail]+input[type=sumbit value=go]))+#camp(>h6+p+span+span.line2+#camp_Img>img[src=images/camp1.jpg alt=camp])+#sns(>a[href=#none]*4>img[src=images/sns$.png alt=sns$])+footer>h2(>img[src=images/logo.png alt=footerLogo])+ul(>li*4>a[href=#none])+p-->
+    
+<!--zen cording-->    
+     
+    <div id="wrapper" class="wrap90 rel move0">
+        <header class="ovh">
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </h1>
+            
+            <!--mobile menu-->
+            <div id="nav" class="rel">
+                <div class="toggle">
+                    <label class="toggle" for="toggler"></label>
+                        <input type="checkbox" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar"
+                         id="toggler">
+
+                        <div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <svg>
+                                <use xlink:href="#path"></use>
+                            </svg>    
+                            <svg>
+                                <use xlink:href="#path"></use>
+                            </svg>    
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                                <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22">
+                                </path>
+                            </symbol>
+                        </svg>
+                     </div>
+                 
+                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav">
+                         <li class="nav-item">
+                            <a class="nav-link" href="#video" onclick="move('0')">HOME</a>         
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#video" onclick="move('1')">GALLERY</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#shop" onclick="move('2')">BOARDS</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#learnWrap" onclick="move('3')">LESSON</a>
+                         </li>    
+                         <li class="nav-item">
+                             <a class="nav-link" href="#club" onclick="move('4')">CLUB</a>
+                         </li>    
+                     </ul>
+                  </div>
+                    
+            </div>
+             <!--mobile menu end-->              
+            
+            <nav>
+                <ul>
+                    <li><a href="#none" onclick="move('0')">HOME</a></li>
+                    <li><a href="#none" onclick="move('1')">GALLERY</a></li>
+                    <li><a href="#shop" onclick="move('2')">BOARDS</a></li>
+                    <li><a href="#learnWrap" onclick="move('3')">LESSON</a></li>
+                    <li><a href="#club" onclick="move('4')">CLUB</a></li>
+                </ul>
+            </nav>
+            
+            <div id="gnb">
+               
+                <div id="search" class="fl rel">
+                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" >
+                        <img src="images/search.png" alt="search">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <input type="text" placeholder="Search">
+                        <input type="submit" onclick="alert('검색결과 없습니다.')" value="&gt;">
+                    </div>
+                </div>
+
+                <div id="language" class="fl rel">           
+                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">EN
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">EN</a>
+                        <a class="dropdown-item" href="#">KR</a>
+                        <a class="dropdown-item" href="#">JP</a>
+                        <a class="dropdown-item" href="#">CN</a>
+                        <a class="dropdown-item" href="#">ES</a>
+                        <a class="dropdown-item" href="#">FR</a>
+                        <a class="dropdown-item" href="#">DE</a>
+                    </div>   
+                </div>
+                
+            </div>
+        </header>
+        <!--header end-->
+        
+        
+        <section id="banner">
+           
+            <div id="banner_L">
+                <span class="blue">With us</span>
+                <h2>Breaking</h2>
+                <h2>Your Self</h2>
+                <p>when you feel that you have nothing or something's going to wrong,<br>
+                Don't give up, and try something like<br>
+                what you can break your self
+                </p>
+            </div>
+            
+            <div id="pageNum">
+                <span></span>
+                /
+                <span></span>
+            </div>
+            <div id="banner_Wrap" class="ovh rel">
+            <div id="banner_R" class="bannerWrap rel ovh">
+                
+                <ul id="imgWrap" class="ovh">
+                    <li><a href="#none" class="dataImg data4"></a></li>
+                    <li><a href="#none" class="dataImg data0"></a></li>
+                    <li><a href="#none" class="dataImg data1"></a></li>
+                    <li><a href="#none" class="dataImg data2"></a></li>
+                    <li><a href="#none" class="dataImg data3"></a></li>
+                </ul>
+                
+                <div class="btnWrap abs">
+                    <input type="checkbox" id="toggleBtn">
+                    <label class="toggle" for="toggleBtn"></label><!--재생버튼-->
+                    <div class="btns">
+                    </div><!--똑딱이버튼-->
+                </div>    
+                
+                <a href="#none" class="btnL abs">이전</a>
+                <a href="#none" class="btnR abs">다음</a>
+                
+                <ul id="dataList">
+                    <li><a href="#none" class="dataImg data0"></a></li>
+                    <li><a href="#none" class="dataImg data1"></a></li>
+                    <li><a href="#none" class="dataImg data2"></a></li>
+                    <li><a href="#none" class="dataImg data3"></a></li>
+                    <li><a href="#none" class="dataImg data4"></a></li>
+                </ul>
+        
+            </div>
+           </div> 
+        </section>
+        <!--section#banner end-->
+        
+        
+        <article class="ovh">
+           <h2>아티클</h2>
+            <p>
+                Surfing is the most blissful experience<br>
+                you can have on this planet, a taste of heaven.
+            </p>
+            
+            <span>
+                JOHN MCCARTMY
+            </span>
+            
+            <span class="line_2"></span>
+            
+        </article>
+        <!--article end-->
+            
+        
+        <div id="video" class="move1">
+            <div id="video_L">
+                <div id="video_Img">
+                    <img src="images/section1.jpg" alt="videoImage">
+                </div>
+                <p>
+                    By better understanding the various aspects of<br>
+                    surfing, you will improve and have more<br>
+                    fun in the water
+                    <span><a href="#none">READ MORE</a></span>
+                    <span class="line_1"></span>
+                </p>
+            </div>
+            
+            <div id="video_R">
+                <video loop controls>
+                    <source src="media/video/video1.mp4">
+                </video>
+               
+            </div>
+            
+        </div>
+        <!--video end-->
+               
+        
+        <div id="shop" class="move2">
+           
+            <div id="shop_T">
+                <span class="blue">Shop</span>
+                <h2>Surfboards</h2>
+                   
+                <button id="left">&lt;</button>
+                <button id="right">&gt;</button>
+           
+            </div>
+            
+            <div id="shop_Mask" class="ovh">
+                <div id="shop_Wrap" class="ovh">
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡboard_1-->          
+                    <div class="shop_B" id="board_1">
+                        <p>
+                            Boardworks Froth Soft Top Surf Board - Tang/White - 5'10"
+
+                            <span>$250.00 </span>
+                            <span><a href="https://www.amazon.com/Boardworks-Froth-Soft-Surf-Board/dp/B06XWFJ64W" target="_blank">BUY NOW</a></span>
+                        </p>
+                        <div class="figureWrap">
+                            <figure>
+                                <img src="images/board1_1.png" alt="shop1">
+                                <figcaption>
+                                    -Built better than your average soft board<br>
+                                    -Croc skin texture for traction and comfort
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board1_2.png" alt="shop2">
+                                <figcaption>
+                                    -Dual wood Stringers for stiffness and strength<br>
+                                    -EPS foam core wrapped in fiberglass epoxy resin laminations
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board1_3.png" alt="shop3">
+                                <figcaption>
+                                    -Full EVA wrapped deck and rails for safety
+                                </figcaption>
+                            </figure>
+
+                            <p> 
+                                   -Built better than your average soft board<br>
+                                    -Croc skin texture for traction and comfort<br>
+                                     -Dual wood Stringers for stiffness and strength<br>
+                                    -EPS foam core wrapped in fiberglass epoxy resin laminations<br>
+                                    -Full EVA wrapped deck and rails for safety
+                            </p>
+                        </div>
+
+                        <span><a href="#none">SHOW MORE</a></span>
+                        <span class="line_1"></span>
+
+                    </div>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡboard_2-->
+                    <div class="shop_B" id="board_2">
+                        <p>
+                            6'6'' MOD FISH Surfboard
+
+                            <span>$180.00 </span>
+                            <span><a href="https://www.torq-surfboards.com/fish-66.html" target="_blank">BUY NOW</a></span>
+                        </p>
+                        <div class="figureWrap">
+                            <figure>
+                                <img src="images/board2_1.png" alt="shop1">
+                                <figcaption>
+                                    -Comprised of a full nose and wide mid, with clean balanced<br>
+                                    -curves that blend into a swallow tail. The bottom contours
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board2_2.png" alt="shop2">
+                                <figcaption>
+                                    -through single to double concave with a lightly flipped nose<br>
+                                    -ETune to your taste with Tri-Quad option
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board2_3.png" alt="shop3">
+                                <figcaption>
+                                    -Recommended Rider Weight 55-85 kg / 120-190 lbs
+                                    -Dimensions 6’6” x 21” x 2 5/8”
+                                </figcaption>
+                            </figure>
+
+                            <p> 
+                                   -Comprised of a full nose and wide mid, with clean balanced<br>
+                                    -curves that blend into a swallow tail. The bottom contours
+                                    -through single to double concave with a lightly flipped nose<br>
+                                    -ETune to your taste with Tri-Quad option
+                                    -Recommended Rider Weight 55-85 kg / 120-190 lbs
+                                    -Dimensions 6’6” x 21” x 2 5/8”
+                            </p>
+                        </div>
+
+                        <span><a href="#none">SHOW MORE</a></span>
+                        <span class="line_1"></span>
+
+                    </div>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡboard_3-->
+                    <div class="shop_B" id="board_3">
+                        <p>
+                            8’6” Jonah’s Whale Foam Soft Performance SUP Surfboard Foamie Surfing Board Surf by Greco Surf
+
+                            <span>$300.00 </span>
+                            <span><a href="https://www.amazon.com/gp/product/B00XJCWIZ6/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=omega2016-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00XJCWIZ6&linkId=4a2cfec28e164bbee08aa88236e5f1e3" target="_blank">BUY NOW</a></span>
+                        </p>
+                        <div class="figureWrap">
+                            <figure>
+                                <img src="images/board3_1.png" alt="shop1">
+                                <figcaption>
+                                     -8′6” x 29.6” x 4.4” / Approximately 118.5 liters of volume<br>
+                                    -Includes EVA diamond groove deck pad with kick tail
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board3_2.png" alt="shop2">
+                                <figcaption>
+                                    -Closed cell EPS foam core. 6oz top and bottom internal epoxy core<br>
+                                    -Five fin set up: 2 thruster 4” fins, 2 smaller 3”, and a 9” 5th Fin included for 2+1 setup or optional configurations.
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board3_3.png" alt="shop3">
+                                <figcaption>
+                                    -Greco Surf Respired technology
+                                </figcaption>
+                            </figure>
+
+                            <p> 
+                                -8′6” x 29.6” x 4.4” / Approximately 118.5 liters of volume<br>
+                                -Includes EVA diamond groove deck pad with kick tail<br>
+                                -Closed cell EPS foam core. 6oz top and bottom internal epoxy core<br>
+                                -Five fin set up: 2 thruster 4” fins, 2 smaller 3”, and a 9” 5th Fin included for 2+1 setup or optional configurations.<br>
+                                -Greco Surf Respired technology
+                            </p>
+                        </div>
+
+                        <span><a href="#none">SHOW MORE</a></span>
+                        <span class="line_1"></span>
+
+                    </div>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡboard_4-->
+                    <div class="shop_B" id="board_4">
+                        <p>
+                            2018 New Design PVC Inflatable Surf Board Paddle Board
+
+                            <span>$230.00 </span>
+                            <span><a href="https://hiwobang.en.made-in-china.com/product/FqtxecvKlNfo/China-2018-New-Design-PVC-Inflatable-Surf-Board-Paddle-Board.html" target="_blank">BUY NOW</a></span>
+                        </p>
+                        <div class="figureWrap">
+                            <figure>
+                                <img src="images/board4_1.png" alt="shop1">
+                                <figcaption>
+                                    -DWF inner tube<br>
+                                    -Laminated PVC outside
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board4_2.png" alt="shop2">
+                                <figcaption>
+                                    - Anti-skid EVA foam veneer<br>
+                                    -All around protective strake
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/board4_3.png" alt="shop3">
+                                <figcaption>
+                                    -Possible for various types of graphics and logos to be printed on the surfboard
+                                </figcaption>
+                            </figure>
+
+                            <p> 
+                                    
+                                     -DWF inner tube<br>
+                                    -Laminated PVC outside
+                                    - Anti-skid EVA foam veneer<br>
+                                    -All around protective strake
+                                    -Possible for various types of graphics and logos to be printed on the surfboard<br>
+                                    -Usable thickness of drop stitch fabric: 4 inches and 6 inches
+                            </p>
+                        </div>
+
+                        <span><a href="#none">SHOW MORE</a></span>
+                        <span class="line_1"></span>
+
+                    </div>
+                    <!--board end-->
+                </div>
+            </div>
+            
+        </div>
+        <!--shop end-->
+       
+        
+        <section id="learnWrap" class="move3 ovh">
+            <div id="learn1" class="ovh">
+                <div id="learn1_L">
+                    <span>
+                        <img src="images/01.png" alt="01">
+                    </span>
+                    <h4>Surf Training</h4>
+                    <span class="line_3"></span>
+                    <p>
+                        By better understanding the various aspects of<br>
+                        surfing,By better understanding the various<br>
+                        aspects of surfing, you will improve faster and<br>
+                        have more fun in the water
+                    </p>
+                    <span><a href="#none">READ MORE</a></span>
+                    <span class="line_1"></span>
+                </div>
+                
+                <div id="learn1_R">
+                    <img src="images/train1.jpg" alt="train1">
+                </div>
+                
+            </div>
+            <div id="learn2" class="ovh">
+                
+                <div id="learn2_L">
+                    <span>
+                        <img src="images/02.png" alt="02">
+                    </span>    
+                    <h4>Point Break</h4>
+                    <span class="line_3"></span>
+                    <p>
+                        By better understanding the various aspects of<br>
+                        surfing,By better understanding the various<br>
+                        aspects of surfing, you will improve faster and<br>
+                        have more fun in the water
+                   </p>
+                    <span><a href="#none">READ MORE</a></span>
+                    <span class="line_1"></span>
+                </div>
+                
+                <div id="learn2_R">
+                    <img src="images/train2.jpg" alt="train2">
+                </div>
+                
+            </div>
+        </section>
+        <!--section#learn end-->
+        
+        
+        <div id="club" class="move4">
+            <span class="line_2"></span>
+            <h3>Join the Club</h3>
+            <p>
+                By better understanding the various aspects of surfing,
+                By better understanding the various<br>
+				aspects of surfing, you will improve faster
+            </p>
+            <form action="none">
+                <input type="text" placeholder="E-mail">
+                <input type="submit" value="&gt;" onclick="alert('Check your e-mail adress again')">
+            </form>
+<!--            <canvas id="club_Can"></canvas>-->
+        </div>
+        <!--club end-->
+        
+        
+        <div id="camp" class="ovh">
+           <div id="camp_T">
+                <h6>Our Camp</h6>
+                <p>
+                    3/29 Waterton St,<br>
+                    Annerley, Brisbane,<br>
+                    QLD, Australia
+                </p>
+                <span class="blue btn btn-primary" data-toggle="modal" data-target="#myModal">Get in Touch</span>
+                <span class="line_1"></span>
+            </div>
+            <div id="camp_Img">
+                <img src="images/camp1.jpg" alt="camp">
+            </div>
+ 
+
+
+        </div>
+        <!--camp end-->
+        
+        
+        <div id="sns">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/sns1.png" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="images/sns2.png" alt="instagram"></a></li>
+                <li><a href="https://twitter.com/?lang=ko" target="_blank"><img src="images/sns3.png" alt="twitter"></a></li>
+                <li><a href="https://www.youtube.com/premium" target="_blank"><img src="images/sns4.png" alt="youtube"></a></li>
+           </ul>
+           
+        </div>       
+        <!--sns end-->
+        
+        
+        <footer>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="footerLogo">
+                </a>
+            </h2>
+            <ul>
+                <li><a href="#none" onclick="move('1')">GALLERY</a></li>
+                <li><a href="#none" onclick="move('2')">BOARDS</a></li>
+                <li><a href="#none" onclick="move('3')">LESSON</a></li>
+                <li><a href="#none" onclick="move('4')">ClUB</a></li>
+            </ul>
+            <p>
+                <a href="https://www.google.co.kr/maps/place/3%2F29+Waterton+St,+Annerley+QLD+4103+%EC%98%A4%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%A6%AC%EC%95%84/@-27.5144018,153.0304032,17z/data=!3m1!4b1!4m5!3m4!1s0x6b915a8c018180f7:0xa2e960c47f4fc6a0!8m2!3d-27.5144018!4d153.0325919?hl=ko" target="_blank">3/29 Waterton St, Annerley, Brisbane, Qld, Australia</a>
+            </p>
+
+            
+        </footer>
+        <!--footer end-->
+        
+        
+    </div>
+    <!--wrapper end-->
+    
+    <!-- googleMap Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">3/29 Waterton St,<br>
+                    Annerley, Brisbane,<br>
+                    QLD, Australia</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <div id="map-canvas" style="width: 100%; height: 400px"></div>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <!-- googleMap Modal -->
+        
+       <audio id="wave1" src="media/wave01.mp3" autoplay></audio>
+       <audio id="wave2" src="media/wave02.mp3"></audio>
+    <!--audio end-->
+        <p>
+            <a href="http://css-validator.kldp.org/check/referer">
+            <img style="border:0;width:80px;height:15px"
+            src="http://css-validator.kldp.org/images/validate/css-blue"
+            alt="올바른 CSS입니다!" />
+            </a>
+        </p>
+</body>
+</html>

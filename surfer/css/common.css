@@ -1,0 +1,193 @@
+.wrap90{width: 90%;margin: auto;}
+.wrap80{width: 80%;margin: auto;}
+.wrap70{width: 70%;margin: auto;}
+.wrap60{width: 60%;margin: auto;}
+/*wrap*/
+
+.fl{float: left;}
+.fr{float: right;}
+.ovh{overflow: hidden;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.cb{clear: both;}
+
+/*layout*/
+
+.blue{color:#71b0f3 !important;font-size: 0.5em !important;}
+/*font*/
+
+.line_1{display: block;width: 50px;height: 1px;background-color: #70b1f1;margin: auto !important;}
+
+.line_2{display: block;width: 1px;height: 50px;background-color: #70b1f1;margin: auto; transition: all 1s;}
+
+.line_3{display: block;width: 30px;height: 1px;background-color: #70b1f1;margin-left:calc(50% - 40px)  !important;}
+/*line*/
+
+.fadeIn{transform: translateY(0);opacity: 1;transition: all 0.5s}
+.fadeOut{transform: translateY(50px);opacity: 0; transition: all 0.5s}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡ모바일메뉴ㅡㅡㅡㅡㅡㅡㅡ*/
+.toggle {
+  display: block;
+  cursor: pointer;
+}
+.toggle input {
+  display: none;
+}
+.toggle input + div {
+/*  width: 20px;*/
+/*  height: 14px;*/
+/*  position: relative;*/
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.toggle input + div div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.toggle input + div div span {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.toggle input + div div span:first-child {
+  top: 0;
+}
+.toggle input + div div span:first-child:before, .toggle input + div div span:first-child:after {
+  top: 0;
+}
+.toggle input + div div span:last-child {
+  bottom: 0;
+}
+.toggle input + div div span:last-child:before, .toggle input + div div span:last-child:after {
+  bottom: 0;
+}
+.toggle input + div div span:before, .toggle input + div div span:after {
+  content: '';
+  display: block;
+  width: 47%;
+  height: 2px;
+  border-radius: 1px;
+  background: #71b0f3;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  transition: border-radius .3s ease, -webkit-transform .5s ease;
+  transition: transform .5s ease, border-radius .3s ease;
+  transition: transform .5s ease, border-radius .3s ease, -webkit-transform .5s ease;
+}
+.toggle input + div div span:before {
+  left: 0;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: translate(1px, 0) scaleX(1.1);
+          transform: translate(1px, 0) scaleX(1.1);
+}
+.toggle input + div div span:after {
+  right: 0;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: translate(-1px, 0) scaleX(1.1);
+          transform: translate(-1px, 0) scaleX(1.1);
+}
+.toggle input + div svg{/*가운데*/
+  display: block;
+  fill: none;
+  stroke: #71b0f3;
+  stroke-width: 2px;
+  width: 44px;
+  height: 44px;
+  stroke-linecap: round;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -22px 0 0 -22px;
+  stroke-dasharray: 0 82.801 8 82.801;
+  stroke-dashoffset: 82.801;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, -webkit-transform .5s ease;
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease;
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease, -webkit-transform .5s ease;
+}
+.toggle input + div svg:nth-child(3) {
+  -webkit-transform: rotate(180deg) scale(1);
+          transform: rotate(180deg) scale(1);
+}
+.toggle input:checked + div div {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.toggle input:checked + div div span:first-child:before {
+  -webkit-transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
+          transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
+}
+.toggle input:checked + div div span:first-child:after {
+  -webkit-transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
+          transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
+}
+.toggle input:checked + div div span:last-child:before {
+  -webkit-transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
+          transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
+}
+.toggle input:checked + div div span:last-child:after {
+  -webkit-transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
+          transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
+}
+.toggle input:checked + div svg {
+  stroke-dashoffset: 62;
+  stroke-dasharray: 0 82.801 62 82.801;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.toggle input:checked + div svg:nth-child(3) {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+/* ㅡㅡㅡㅡㅡㅡㅡ모바일메뉴ㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+/*section rolling*/
+
+.bannerWrap #imgWrap{/*width: 300%;or*/ width: 500%;}
+        
+.bannerWrap #imgWrap li{float: left;}
+.bannerWrap .btnWrap{width: 100%;text-align: center;bottom: 25px;}
+.bannerWrap .btnWrap input#toggleBtn{display: none;}
+.bannerWrap .btnWrap input#toggleBtn + label.toggle{display: inline-block;width: 30px;height: 30px;background: url(http://www.cjone.com/cjmweb/images/main/btn_banner.png) no-repeat -102px -30px;cursor: pointer;}
+.bannerWrap .btnWrap input#toggleBtn.chk + label.toggle{background-position: -102px 0; }
+/*체크가 됬을때 에드클래스를 사용하여 좌표값을 수정해주기위함이며 라벨을 클릭하여도 인풋태그가 클릭되는것이기 때문에 인풋태그에 클래스를 붙여준다.*/
+.bannerWrap .btnWrap .btns{display: inline-block;}
+.bannerWrap .btnWrap .btns a{display: inline-block;width: 14px;height: 14px;background-color: rgba(0,0,0,.1);border: 2px solid white;border-radius: 50%; margin-left: 10px;margin-bottom: 5px;}
+.bannerWrap .btnWrap .btns a.active{background-color: rgba(255,255,255,.5); border-color: #ccc;}
+.bannerWrap a.btnL, .bannerWrap a.btnR{display: block;top: 50%;height: 50px;width: 46px;margin-top: -25px;text-indent: -9999px;z-index: 9999;}
+.bannerWrap a.btnL{left: 0;background: url(http://www.cjone.com/cjmweb/images/main/btn_banner.png) no-repeat; }
+.bannerWrap a.btnR{right: 0;background: url(http://www.cjone.com/cjmweb/images/main/btn_banner.png) no-repeat -46px 0;}
+.bannerWrap #dataList{display: none;}
+a.dataImg{display: block; width: 100%;height: 100%; background-position: center;background-repeat: no-repeat;background-size:cover;}
+a.data0{background-image: url(../images/main1.jpg)}
+a.data1{background-image: url(../images/main2.jpg)}
+a.data2{background-image: url(../images/main3.jpg)}
+a.data3{background-image: url(../images/main4.jpg)}
+a.data4{background-image: url(../images/main5.jpg)}
+/*.bannerWrap a.btnL{display: none;}*/
+
+
+
+

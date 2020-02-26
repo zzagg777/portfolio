@@ -1,0 +1,164 @@
+/*tablet*/
+@media only screen and (min-width: 546px) {
+    html, body{font-size: 20px}
+    header{}
+    header h1{float: left;width: 20%;}
+    header h1 a{}
+    header h1 a img{width: 100%;}
+    
+    header #nav{display: none;}
+    
+    header nav{display: block;width: 60%;float: left;overflow: hidden;line-height: 6.5;}
+    header nav ul{width: 100%;display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;margin: 0;}
+    header nav ul li{flex: 1;}
+    header nav ul li a{}
+    
+    header #gnb{top:2.5rem}
+    header #gnb #search{}
+    header #gnb #search a{}
+    header #gnb #search a img{}
+    header #gnb #search a + div{}
+    header #gnb #search a + div input{}
+    
+    header #gnb #language{}
+    header #gnb #language a{}
+    header #gnb #language a + div{}
+    header #gnb #language a + div > a{}
+    
+    /*header end*/
+    
+    section#banner{}
+    section#banner #banner_L{position: absolute;top: 6vw}
+    section#banner #banner_L span{}
+    section#banner #banner_L h2{}
+    section#banner #banner_L span + h2{}
+    section#banner #banner_L h2+h2{}
+    section#banner #banner_L p{}
+    
+    section#banner #pageNum{left: 5rem; bottom: 4.5rem;}
+    section#banner #pageNum span{}
+    
+    section#banner #banner_Wrap{float: right;width: 80%;}
+    section#banner #banner_R{width: 100%;}
+    section#banner #banner_R img{}
+
+    /*sectionWrap end*/
+    
+    article{}
+    article p{}
+    article p + span{}
+
+    /*article end*/
+    
+    #video{}
+    #video #video_L{}
+    #video #video_L #video_Img{}
+    #video #video_L #video_Img img{}
+    #video #video_L p{}
+    #video #video_L p span{}
+
+    #video #video_R{}
+    #video #video_R video{}
+
+    /*video end*/
+
+    #shop{}
+    #shop #shop_T{}
+    #shop #shop_T h2{}
+
+    #shop .shop_B{position: relative;}
+    #shop .shop_B p{}
+    #shop .shop_B p span{position: absolute;bottom: 42%;right: 10px;}
+    #shop .shop_B p span + span{bottom: 40%;}
+    #shop .shop_B p span + span a{}
+    #shop .shop_B .figureWrap{display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;flex-wrap: wrap}
+    #shop .shop_B .figureWrap figure{flex-basis: 50%;margin-bottom: 0;}
+    #shop .shop_B .figureWrap figure img{}
+    #shop .shop_B .figureWrap figure figcaption{display: none;}
+    #shop .shop_B .figureWrap p{display: inherit;flex-basis: 50%;text-align: left;padding: 4rem 1.5rem 1.5rem;font-size: 0.8rem;}
+    #shop .shop_B .figureWrap + span{}
+
+    /*shop end*/
+    
+    section#learnWrap{overflow: hidden;text-align: left;}
+    section#learnWrap #learn1{margin: 4rem 0;}
+
+    section#learnWrap #learn1_L{float: left;width: 50%;margin-left: 1rem;}
+    
+    section#learnWrap #learn1_L span:first-child,#learn2_L span:first-child{left: -1rem}
+    
+    section#learnWrap #learn1_L img{}
+    section#learnWrap #learn1_L h4{}
+    section#learnWrap #learn1_L h4+span,#learn2_L h4+span{margin-left: 0.5rem !important;}
+    section#learnWrap #learn1_L p{}
+
+    section#learnWrap #learn1_L p+span{}
+
+    section#learnWrap #learn1_R{float: right;width: 40%;}
+    section#learnWrap #learn1_R img{width: 100%;}    
+    
+    section#learnWrap #learn1_L p+span+span,#learn2_L p+span+span{margin-left: 0.5rem !important;}
+    
+
+    section#learnWrap #learn2{}
+
+    section#learnWrap #learn2_L{float: right;width: 50%;}
+    section#learnWrap #learn2_L img{}
+    section#learnWrap #learn2_L h4{}
+    section#learnWrap #learn2_L p{}
+    section#learnWrap #learn2_L p+span{}
+
+    section#learnWrap #learn2_R{float: left;width: 40%;}
+    section#learnWrap #learn2_R img{width: 80%;}    
+    /*section#learnWrap  end*/
+
+    #club{}
+    #club h3{}
+    #club p{}
+    #club form{}
+    #club form input{}
+    #club form input:nth-child(1){}
+    #club form input:nth-child(2){}
+
+    /*club end*/
+
+    #camp{}
+    #camp #camp_T{float: left;width: 50%;padding: 60px;}
+    #camp #camp_T h6{}
+    #camp #camp_T p{}
+    #camp #camp_T p+span{}
+    #camp #camp_Img{float: left;width:  50%;margin: 0;}
+    #camp #camp_Img img{}
+
+    #sns{}
+    #sns ul{}
+    #sns ul li{}
+    #sns ul li a{}
+    #sns ul li a img{}
+
+    footer{}
+    footer h2{}
+    footer h2 a{}
+    footer h2 a img{width: 40%;}
+    footer ul{}
+    footer ul li{}
+    footer ul li a{}
+    footer p{}
+
+     .fx{position: fixed;top: 0;left: 0;background-color: rgba(255,255,255,0.5);z-index: 1000;margin: 0;width:100%;padding: 0 5%;}
+    
+     .gnbR{right: 2rem !important;} 
+}
+/*tablet end*/
+
+
+
+

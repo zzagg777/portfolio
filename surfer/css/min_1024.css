@@ -1,0 +1,149 @@
+@media only screen and (min-width: 1024px) {
+    html, body{}
+    header{}
+    header h1{}
+    header h1 a{}
+    header h1 a img{}
+    
+    header #nav{}
+    
+    header nav{}
+    header nav ul{}
+    header nav ul li{}
+    header nav ul li a{}
+    
+    header #gnb{}
+    header #gnb #search{}
+    header #gnb #search a{}
+    header #gnb #search a img{}
+    header #gnb #search a + div{}
+    header #gnb #search a + div input{}
+    
+    header #gnb #language{}
+    header #gnb #language a{}
+    header #gnb #language a + div{}
+    header #gnb #language a + div > a{}
+    
+    /*header end*/
+    
+    section#banner{}
+    section#banner #banner_L{}
+    section#banner #banner_L span{}
+    section#banner #banner_L h2{}
+    section#banner #banner_L span + h2{}
+    section#banner #banner_L h2+h2{}
+    section#banner #banner_L p{}
+    
+    section#banner #pageNum{}
+    section#banner #pageNum span{}
+    section#banner #banner_R{}
+    
+    section#banner #banner_R img{}
+
+    /*sectionWrap end*/
+    
+    article{}
+    article p{}
+    article p + span{}
+
+    /*article end*/
+    #video{}
+    #video #video_L{width: 55%;margin-right: 45%;}
+    #video #video_L #video_Img{}
+    #video #video_L #video_Img img{}
+    #video #video_L p{width: 60%;margin-left: 10%;text-align: left;}
+    #video #video_L p span{text-align: right;}
+    #video #video_L p span +span{float: right;}
+
+    #video #video_R{position: absolute;top: 7%;width: 100%;text-align: right;z-index: 10;}
+    #video #video_R video{width: 60%;}
+
+    /*video end*/
+
+    #shop{}
+    #shop #shop_T{}
+    #shop #shop_T h2{}
+
+    #shop .shop_B{}
+    #shop .shop_B > p{}
+    #shop .shop_B p span:nth-child(1){top:1rem}
+    #shop .shop_B p span:nth-child(2){top:2rem;}
+    #shop .shop_B p span + span a{}
+    #shop .shop_B .figureWrap{}
+    #shop .shop_B .figureWrap > p{display: none;}
+    #shop .shop_B .figureWrap figure{flex-basis: 30%;margin: 10px auto;}
+    #shop .shop_B .figureWrap figure img{width: 100%;}
+    #shop .shop_B .figureWrap figure figcaption{display: block;}
+    #shop .shop_B .figureWrap + span{}
+
+    /*shop end*/
+    
+        
+    section#learnWrap{}
+    section#learnWrap p+span{}
+    section#learnWrap #learn1{margin: 10rem 0;}
+
+    section#learnWrap #learn1_L{float: right;width: 35%;margin-left: 0;}
+    section#learnWrap #learn1_L img{}
+    section#learnWrap #learn1_L h4{}
+    section#learnWrap #learn1_L p{}
+    section#learnWrap #learn1_L p+span{}
+    
+    section#learnWrap #learn1_R{float: left;width: 50%;}
+    section#learnWrap #learn1_R img{width: 100%;}    
+    
+    
+
+   
+
+    section#learnWrap #learn2{}
+    
+
+    section#learnWrap #learn2_L{float: left;margin-left: 1rem;width: 35%;}
+    section#learnWrap #learn2_L img{}
+    section#learnWrap #learn2_L h4{}
+    section#learnWrap #learn2_L p{}
+    section#learnWrap #learn2_L p+span{}
+    
+    section#learnWrap #learn2_R{float: right;width: 50%;}
+    section#learnWrap #learn2_R img{width: 80%;}
+
+    /*section#learnWrap  end*/
+
+    #club{}
+    #club h3{}
+    #club p{}
+    #club form{}
+    #club form input{}
+    #club form input:nth-child(1){}
+    #club form input:nth-child(2){}
+
+    /*club end*/
+
+    #camp{}
+    #camp #camp_T{}
+    #camp #camp_T h6{}
+    #camp #camp_T p{}
+    #camp #camp_T p+span{}
+    #camp #camp_Img{}
+    #camp #camp_Img img{}
+
+
+    #sns{position: fixed;left: 0;top: 160px;width: 50px;height: 200px;}
+    #sns ul{display: block;}
+    #sns ul li{}
+    #sns ul li a{}
+    #sns ul li a img{}
+
+    footer{}
+    footer h2{}
+    footer h2 a{}
+    footer h2 a img{}
+    footer ul{}
+    footer ul li{}
+    footer ul li a{}
+    footer p{}
+    
+    
+    .gnbR{right: 4.5rem !important;}   
+}

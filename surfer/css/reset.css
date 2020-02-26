@@ -1,0 +1,9 @@
+body,header,nav,section,article,footer,div,h1,h2,h3,h4,h5,h6,figure,figcaption,ul,ol,li,span,a,img{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;}
+
+a{text-decoration: none;color: #222 !important}
+a:hover{text-decoration: none !important;}
+
+p{color:#909090}
+
+
